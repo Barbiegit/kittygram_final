@@ -29,7 +29,7 @@ services:
     image: zakosyachnaya/kittygram_gateway
     env_file: .env
     ports:
-      - '9000:9000'
+      - 9000:80
     volumes:
       - static_volume:/staticfiles
       - media_volume:/media
