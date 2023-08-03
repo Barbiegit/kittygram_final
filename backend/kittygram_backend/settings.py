@@ -12,6 +12,7 @@ SECRET_KEY = (os.getenv("SECRET_KEY", ""),)
 DEBUG = True
 
 ALLOWED_HOSTS = ["158.160.2.118", "127.0.0.1", "localhost", "obami.bounceme.net"]
+CSRF_TRUSTED_ORIGINS = ["https://obami.bounceme.net"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
