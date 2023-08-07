@@ -14,7 +14,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["158.160.2.118", "127.0.0.1", "localhost", "babama.ddns.net"]
 
-CSRF_TRUSTED_ORIGINS = ['https://*.ddns.net']
 
 INSTALLED_APPS = [  
     "django.contrib.admin",
@@ -121,3 +120,5 @@ REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
 }
+
+CORS_ORIGIN_WHITELIST = ["http://localhost:3000"]
