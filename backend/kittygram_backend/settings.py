@@ -10,11 +10,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = (os.getenv("SECRET_KEY", ""),)
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["158.160.2.118", "127.0.0.1", "localhost", "babama.ddns.net"]
-
-CSRF_TRUSTED_ORIGINS = ['https://*.ddns.net']
 
 INSTALLED_APPS = [  
     "django.contrib.admin",
